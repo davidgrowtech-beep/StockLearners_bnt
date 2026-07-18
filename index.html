@@ -175,10 +175,10 @@ src="https://www.facebook.com/tr?id=27488308760829120&ev=PageView&noscript=1"
             counter.innerText = time;
         }
 
-        if (time <= 0) {
-            clearInterval(countdown);
-            trackAndRedirect('auto');
-        }
+       if (time <= 0) {
+    clearInterval(countdown);
+    trackAndRedirect({ preventDefault(){}, currentTarget: { href: TELEGRAM_URL } });
+}
     }, 1000);
 </script>
 
